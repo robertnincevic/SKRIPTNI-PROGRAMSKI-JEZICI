@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+
+
+}
+
+body {
+    background: #444;
+}
+
+main {
+    padding: 0 0.5rem;
+    height: 100vh;
+}
+
+.image--gallery {
+    width: 100%;
+    height: 48rem;
+    display: block;
+    margin: auto;
+    border: 2px solid #222;
+    object-fit: cover;
+}
+
+.image--selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    justify-content: centar;
+    padding: 0;
+}
+
+.image__item {
+    width: 100%;
+    height: 8rem;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.loader {
+    text-align: center;
+    margin-top: 30%;
+
+}
+
+.animate-entrance {
+    animation: BounceIn 0.8s;
+
+
+}
+
+@keyframes BounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+}
